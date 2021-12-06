@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Project 105</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    </head>
+    <body>
+        <div class="main_div">
+            <center>
+                <h3>Webcam - </h3>
+                <div id="camera"></div>
+                <br>
+                <br>
+                <div id="result_image"></div>
+                <br>
+                <br></br>
+                <button class="btn btn-success" onclick="takepic()">Take Picture</button>
+                <br>
+                <br>
+                <button class="btn btn-info" onclick="checkImage()">Check Picture</button>
+                <br>
+                <br>
+                <p>Object : <span id="object_name"></span></p>
+                <p>Accuracy : <span id="object_accuracy"></span></p>
+            </center>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
